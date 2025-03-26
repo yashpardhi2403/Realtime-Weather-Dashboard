@@ -1,8 +1,4 @@
-# 🚀 Data Dashboard Project
-
-A comprehensive project that integrates **Power BI dashboarding**, **web scraping**, and **data transformations** to create dynamic, interactive visualizations.
-![Dashboard](https://github.com/user-attachments/assets/30f200a6-71db-4d23-bbad-cae25082cd43)
-
+# 🚀 Cricklytics
 ## 📚 Table of Contents
 
 - [Overview](#overview)
@@ -19,6 +15,7 @@ A comprehensive project that integrates **Power BI dashboarding**, **web scrapin
 ## 🔍 Overview
 
 This project aims to provide insightful, interactive dashboards by collecting data from various online sources using web scraping, processing the data through several transformation steps, and visualizing the results in Power BI. The dashboard offers key metrics and analytics for data-driven decision-making.
+![Dashboard](https://github.com/user-attachments/assets/30f200a6-71db-4d23-bbad-cae25082cd43)
 
 ## ✨ Features
 
