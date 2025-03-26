@@ -1,6 +1,7 @@
 # 🚀 Data Dashboard Project
 
 A comprehensive project that integrates **Power BI dashboarding**, **web scraping**, and **data transformations** to create dynamic, interactive visualizations.
+![Dashboard](https://github.com/user-attachments/assets/30f200a6-71db-4d23-bbad-cae25082cd43)
 
 ## 📚 Table of Contents
 
