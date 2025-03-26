@@ -99,19 +99,18 @@ python run_pipeline.py
 
 ## 📁 Project Structure
 ```
-datadashboardproject/
-├── data/
-│   ├── raw/                # Raw data files from web scraping
-│   └── processed/          # Transformed and cleansed data ready for visualization
-├── scripts/
-│   ├── web_scraper.py      # Script to perform web scraping
-│   ├── data_transform.py   # Script for data transformation tasks
-│   └── run_pipeline.py     # Orchestrates the scraping and transformation process
-├── dashboard/
-│   └── Dashboard.pbix      # Power BI project file
-├── config.json             # Configuration file for URLs, API keys, etc.
-├── requirements.txt        # Python dependencies list
-└── README.md               # Project documentation
+datadashboardproject/  
+├── Stage-2.pbix                # Power BI dashboard file (Stage 2)  
+├── Stage-3.pbix                # Power BI dashboard file (Stage 3)  
+├── t20_cric_1_power_query.pbix  # Power BI project for T20 cricket analysis  
+├── t20_csv_files.zip            # Compressed CSV files for T20 data  
+├── t20_json_files.zip           # Compressed JSON files for T20 data  
+├── web_scrapping_codes.zip      # Compressed web scraping scripts  
+├── t20_data_preprocessing.ipynb # Jupyter Notebook for data preprocessing  
+├── requirements.txt             # Python dependencies list  
+├── config.json                  # Configuration file for URLs, API keys, etc.  
+└── README.md                    # Project documentation  
+
 ```
 
 ## 🌐 Data Sources
