@@ -30,9 +30,6 @@ This project aims to provide insightful, interactive dashboards by collecting da
 - **Power BI:** For creating and hosting interactive dashboards.
 - **Python (or other scripting language):** For web scraping and data transformation tasks.
 - **Pandas / DataFrame libraries:** To handle and transform datasets.
-- **BeautifulSoup / Selenium:** (or other web scraping tools) to extract data from web sources.
-- **REST APIs:** Where applicable, to fetch data in a structured format.
-- **SQL / NoSQL databases:** For data storage and retrieval (if applicable).
 
 ## ⚙️ Setup and Installation
 
