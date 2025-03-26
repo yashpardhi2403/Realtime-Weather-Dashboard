@@ -40,7 +40,6 @@ This project aims to provide insightful, interactive dashboards by collecting da
 - Required Python libraries:
   - `pandas`
   - `requests`
-  - `beautifulsoup4` or `selenium`
   - Additional libraries as specified in `requirements.txt`
 
 ### Installation Steps
