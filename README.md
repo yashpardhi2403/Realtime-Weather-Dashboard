@@ -1,123 +1,51 @@
-# 🚀 Cricklytics
-## 📚 Table of Contents
+# Real-time Weather Dashboard using Power BI
 
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Data Sources](#data-sources)
-- [Data Transformation Pipeline](#data-transformation-pipeline)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
+![Dashboard Screenshot](https://user-images.githubusercontent.com/109890466/232371997-767d2645-4203-455b-80a5-29653a921d7b.png)
 
-## 🔍 Overview
+## Overview
 
-This project aims to provide insightful, interactive dashboards by collecting data from various online sources using web scraping, processing the data through several transformation steps, and visualizing the results in Power BI. The dashboard offers key metrics and analytics for data-driven decision-making.
+This project is a dynamic and interactive weather dashboard built with Microsoft Power BI. It provides real-time weather data for any location, leveraging a live weather API. The dashboard is designed to be clean, user-friendly, and insightful, offering a comprehensive view of current weather conditions and a 7-day forecast.
 
+Data is automatically fetched, cleaned, and updated to ensure the information is always current, making it a powerful tool for live weather tracking.
 
-## ✨ Features
+## Key Features
 
-- **Interactive Dashboards:** Utilizes Power BI to present dynamic and responsive visualizations. 📊
-- **Automated Web Scraping:** Extracts real-time or periodically updated data from targeted websites. 🌐
-- **Data Transformation:** Cleanses, transforms, and aggregates raw data to make it analysis-ready. 🔄
-- **Modular Architecture:** Easily extend or modify the scraping and transformation processes as needed. 🛠️
-- **Custom Reporting:** Offers tailored insights based on user-defined criteria and filters. 📈
+*   **Live Data Integration**: Connects to a real-time weather API to fetch up-to-the-minute weather data.
+*   **Automated Data Refresh**: Utilizes Power Automate to trigger seamless, real-time updates without manual intervention.
+*   **Data Transformation**: Employs Power Query for efficient data cleaning, shaping, and transformation to ensure data quality and consistency.
+*   **Interactive Visuals**: Features a clean, interactive dashboard with slicers and dynamic DAX measures for a customized user experience.
+*   **Comprehensive KPIs**: Displays key performance indicators (KPIs) for a complete weather analysis.
+*   **7-Day Forecast**: Provides a detailed weather forecast for the upcoming week.
 
-## 🛠️ Technologies Used
+## Key Performance Indicators (KPIs) Displayed
 
-- **Power BI:** For creating and hosting interactive dashboards.
-- **Python (or other scripting language):** For web scraping and data transformation tasks.
-- **Pandas / DataFrame libraries:** To handle and transform datasets.
+*   **Current Weather Conditions**: (e.g., Sunny, Cloudy, Rain)
+*   **Temperature**: Current, maximum, and minimum.
+*   **Atmospheric Pressure**: Measured in hPa.
+*   **Wind Speed & Direction**: Real-time wind analysis.
+*   **UV Index**: Current ultraviolet radiation level.
+*   **Humidity**: Percentage of moisture in the air.
+*   **Visibility**: Distance one can see clearly.
+*   **Sunrise & Sunset Times**: Daily solar timings.
 
-## ⚙️ Setup and Installation
+## Technologies Used
 
-### Prerequisites
+*   **Data Visualization & Dashboarding**: Microsoft Power BI
+*   **Data Transformation & Cleaning**: Power Query
+*   **Workflow Automation**: Power Automate
+*   **Data Modeling & Calculations**: Data Analysis Expressions (DAX)
+*   **Data Source**: Live Weather API
 
-- **Power BI Desktop:** [Download and install](https://powerbi.microsoft.com/desktop/) 💻
-- **Python 3.x:** Ensure Python is installed on your system.
-- Required Python libraries:
-  - `pandas`
-  - `requests`
-  - Additional libraries as specified in `requirements.txt`
+## How It Works
 
-### Installation Steps
+1.  **API Data Fetch**: A live weather API is used as the primary data source.
+2.  **Data Transformation with Power Query**: Raw JSON data from the API is loaded into Power BI, where Power Query is used to parse, clean, and structure the data into a usable format.
+3.  **DAX Measures**: DAX is used to create calculated measures for the KPIs and to enable complex filtering and interactions within the dashboard.
+4.  **Interactive Dashboard Design**: The cleaned data and DAX measures are visualized on the Power BI canvas to create an intuitive and interactive report.
+5.  **Automated Refresh with Power Automate**: A Power Automate flow is set up to automatically refresh the Power BI dataset, ensuring the dashboard always displays the latest weather information.
 
-  ## Clone the Repository
+## Author
 
-   ```bash
-   git clone https://github.com/yourusername/datadashboardproject.git
-   cd datadashboardproject
-  ```
+*   **Yash Pardhi**
+    *   GitHub: [yashpardhi2403](https://github.com/yashpardhi2403)
 
-## Setup Python Environment
-
-### Create a Virtual Environment (Optional but Recommended)
-```bash
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-```
-
-### Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-## Configure Data Sources
-Update the configuration file (`config.json` or similar) with your target URLs and API keys if needed.
-
-## Run Data Scraping and Transformation Scripts
-```bash
-python run_pipeline.py
-```
-
-## Open Power BI Dashboard
-- Open the provided Power BI file (`Dashboard.pbix`) in Power BI Desktop.
-- Connect to the transformed data source (e.g., CSV file, database) if required.
-- Refresh the dataset to load the latest data.
-
-## 🎯 Usage
-
-### Data Collection
-- Execute the scraping script to pull data from the predefined websites. 🌐
-- Verify the downloaded data in the `data/raw` directory.
-
-### Data Transformation
-- The transformation script cleans and aggregates the data.
-- Processed data is saved in the `data/processed` directory. 🔄
-
-### Dashboard Interaction
-- Use Power BI to interact with the dashboard.
-- Apply filters, drill down into metrics, and generate reports as needed. 📊
-
-## 📁 Project Structure
-```
-datadashboardproject/  
-├── Stage-2.pbix                # Power BI dashboard file (Stage 2)  
-├── Stage-3.pbix                # Power BI dashboard file (Stage 3)  
-├── t20_cric_1_power_query.pbix  # Power BI project for T20 cricket analysis  
-├── t20_csv_files.zip            # Compressed CSV files for T20 data  
-├── t20_json_files.zip           # Compressed JSON files for T20 data  
-├── web_scrapping_codes.zip      # Compressed web scraping scripts  
-├── t20_data_preprocessing.ipynb # Jupyter Notebook for data preprocessing  
-├── requirements.txt             # Python dependencies list  
-├── config.json                  # Configuration file for URLs, API keys, etc.  
-└── README.md                    # Project documentation  
-
-```
-
-## 🌐 Data Sources
-- List the primary websites or APIs used for scraping.
-- Mention any restrictions or limitations related to the data (e.g., scraping frequency, legal considerations).
-
-## 🔄 Data Transformation Pipeline
-- **Extraction:** Data is scraped from multiple sources using designated tools and libraries.
-- **Transformation:** Data is cleaned, normalized, and enriched to ensure consistency.
-- **Loading:** The transformed data is exported in formats suitable for Power BI (e.g., CSV, SQL database).
-
-## 🚀 Future Enhancements
-- **Real-Time Data Updates:** Implement a scheduler to automate the scraping and dashboard refresh. ⏱️
-- **Advanced Analytics:** Incorporate machine learning models for predictive analytics. 🤖
-- **Enhanced Visualization:** Expand the dashboard with additional KPIs and interactive elements. 📊
-- **User Authentication:** Secure access to the dashboard for different user roles. 🔒
